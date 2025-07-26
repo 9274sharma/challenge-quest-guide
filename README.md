@@ -1,6 +1,6 @@
 <p align="left">
-  <img src="public/screenshots/challenglyLogo.png" alt="Logo" width="60" style="vertical-align: middle;"/>
-  <span style="font-size: 2rem; font-weight: bold; vertical-align: middle; margin-left: 10px;">Changelly App</span>
+  <img src="public/screenshots/challenglyLogo.png" width="32" height="32" alt="Logo"/>
+  &nbsp;&nbsp;<strong>Changelly App</strong>
 </p>
 
 ![Vite](https://img.shields.io/badge/Vite-4.0+-blueviolet?logo=vite&logoColor=white)
