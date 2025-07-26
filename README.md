@@ -1,7 +1,7 @@
 <!-- ![ChallenglyLogo](public/screenshots/challenglyLogo.png) -->
 
 <p align="left">
-  <img src="public/screenshots/challenglyLogo.png" alt="Challengly Logo" width="32" style="vertical-align:middle; margin-right: 8px;">
+  <img src="public/screenshots/challenglyLogo.png" alt="Challengly Logo" width="40" style="vertical-align:middle; margin-right: 8px;">
   <strong style="font-size: 2em; vertical-align:middle;">Challengly App</strong>
 </p>
 
