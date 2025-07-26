@@ -1,4 +1,5 @@
-![Logo](public/screenshots/challenglyLogo.png) 
+<img src="public/screenshots/challenglyLogo.png" width="60" height="60" alt="Logo"/>
+
 # Changelly App 
 
 ![Vite](https://img.shields.io/badge/Vite-4.0+-blueviolet?logo=vite&logoColor=white)
