@@ -1,6 +1,6 @@
-![ChallenglyLogo](public/screenshots/challenglyLogo.png)
+<!-- ![ChallenglyLogo](public/screenshots/challenglyLogo.png) -->
 
-# Challengly App
+<img src="public/screenshots/challenglyLogo.png" alt="Dashboard 1" width="20"/> # Challengly App
 
 ![Vite](https://img.shields.io/badge/Vite-4.0+-blueviolet?logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-18+-61dafb?logo=react&logoColor=black)
@@ -22,17 +22,21 @@
 
 ## Screenshots
 
-<!-- | Onboarding 1 | Onboarding 2                                            | Onboarding 3                                            | Onboarding 4                                        |
-| ------------ | ------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------- |
-| <img src/>   | ![Onboarding 2](public/screenshots/onBoarding2.png.png) | ![Onboarding 3](public/screenshots/onBoarding3.png.png) | ![Onboarding 4](public/screenshots/onBoarding4.png) | -->
+| Welcome Screen                                                                 |
+| ------------------------------------------------------------------------------ |
+| <img src="public/screenshots/onBoarding1.png" alt="Onboarding 1" width="200"/> |
 
-| Onboarding 1                                                                   | Onboarding 2                                                                   | Onboarding 3                                                                   | Onboarding 4                                                                   |
-| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
-| <img src="public/screenshots/onBoarding1.png" alt="Onboarding 1" width="200"/> | <img src="public/screenshots/onBoarding2.png" alt="Onboarding 2" width="200"/> | <img src="public/screenshots/onBoarding3.png" alt="Onboarding 3" width="200"/> | <img src="public/screenshots/onBoarding4.png" alt="Onboarding 4" width="200"/> |
+| Onboarding (flow - 1)                                                          | Onboarding (flow - 2)                                                          | Onboarding (flow - 3)                                                          |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| <img src="public/screenshots/onBoarding2.png" alt="Onboarding 1" width="200"/> | <img src="public/screenshots/onBoarding3.png" alt="Onboarding 2" width="200"/> | <img src="public/screenshots/onBoarding4.png" alt="Onboarding 3" width="200"/> |
 
-| Dashboard                                      | Chat Assistant                       | Profile                                    |
-| ---------------------------------------------- | ------------------------------------ | ------------------------------------------ |
-| ![Dashboard](public/screenshots/dashboard.png) | ![Chat](public/screenshots/chat.png) | ![Profile](public/screenshots/profile.png) |
+| Dashboard (flow - 1)                                                         | Dashboard (flow - 2)                                                         | Dashboard 3 (flow - 3)                                                       | Dashboard (flow - 4)                                                         |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| <img src="public/screenshots/Dashboard1.png" alt="Dashboard 1" width="200"/> | <img src="public/screenshots/Dashboard2.png" alt="Dashboard 2" width="200"/> | <img src="public/screenshots/Dashboard3.png" alt="Dashboard 3" width="200"/> | <img src="public/screenshots/Dashboard4.png" alt="Dashboard 4" width="200"/> |
+
+| Chat Assistant                                                         | Profile                                                                   |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| <img src="public/screenshots/Chat.png" alt="Dashboard 1" width="200"/> | <img src="public/screenshots/profile.png" alt="Dashboard 1" width="200"/> |
 
 ## Setup Instructions (Web)
 
