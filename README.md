@@ -1,6 +1,9 @@
 <!-- ![ChallenglyLogo](public/screenshots/challenglyLogo.png) -->
 
-<img src="public/screenshots/challenglyLogo.png" alt="Dashboard 1" width="20"/> # Challengly App
+<p align="left">
+  <img src="public/screenshots/challenglyLogo.png" alt="Challengly Logo" width="32" style="vertical-align:middle; margin-right: 8px;">
+  <strong style="font-size: 2em; vertical-align:middle;">Challengly App</strong>
+</p>
 
 ![Vite](https://img.shields.io/badge/Vite-4.0+-blueviolet?logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-18+-61dafb?logo=react&logoColor=black)
