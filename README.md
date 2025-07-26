@@ -122,7 +122,7 @@ npm test
 
 ## Architecture Overview
 
-```mermaid
+```
 flowchart TD
     A[App Entry (src/App.tsx)] --> B[Routing (react-router-dom)]
     B --> C1[Dashboard]
