@@ -15,6 +15,7 @@ dist-ssr
 # Editor directories and files
 .vscode/*
 android
+.prettierignore
 ios
 capacitor.config.ts
 !.vscode/extensions.json

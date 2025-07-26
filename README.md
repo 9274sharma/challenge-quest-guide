@@ -30,13 +30,13 @@
 | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
 | <img src="public/screenshots/onBoarding2.png" alt="Onboarding 1" width="200"/> | <img src="public/screenshots/onBoarding3.png" alt="Onboarding 2" width="200"/> | <img src="public/screenshots/onBoarding4.png" alt="Onboarding 3" width="200"/> |
 
-| Dashboard (flow - 1)                                                         | Dashboard (flow - 2)                                                         | Dashboard 3 (flow - 3)                                                       | Dashboard (flow - 4)                                                         |
-| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| <img src="public/screenshots/Dashboard1.png" alt="Dashboard 1" width="200"/> | <img src="public/screenshots/Dashboard2.png" alt="Dashboard 2" width="200"/> | <img src="public/screenshots/Dashboard3.png" alt="Dashboard 3" width="200"/> | <img src="public/screenshots/Dashboard4.png" alt="Dashboard 4" width="200"/> |
+| Dashboard (flow - 1)                                                           | Dashboard (flow - 2)                                                           | Dashboard 3 (flow - 3)                                                         | Dashboard (flow - 4)                                                         |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| <img src="public/screenshots/Dashboard1.png" alt="Dashboard 1" width="200"/>   | <img src="public/screenshots/Dashboard2.png" alt="Dashboard 2" width="200"/>   | <img src="public/screenshots/Dashboard3.png" alt="Dashboard 3" width="200"/>   | <img src="public/screenshots/Dashboard4.png" alt="Dashboard 4" width="200"/> |
 
-| Chat Assistant                                                         | Profile                                                                   |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| <img src="public/screenshots/Chat.png" alt="Dashboard 1" width="200"/> | <img src="public/screenshots/profile.png" alt="Dashboard 1" width="200"/> |
+| Chat Assistant                                                                 | Profile                                                                        |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| <img src="public/screenshots/Chat.png" alt="Dashboard 1" width="200"/>         | <img src="public/screenshots/profile.png" alt="Dashboard 1" width="200"/>      |
 
 ## Setup Instructions (Web)
 
