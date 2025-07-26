@@ -85,7 +85,7 @@ npm run build
 npx cap add ios
 ```
 
-    - Android:
+   - Android:
 
 ```sh
 npx cap add android
@@ -98,7 +98,7 @@ npx cap add android
 npx cap open ios
 ```
 
-    - Android (Android Studio):
+   - Android (Android Studio):
 
 ```sh
 npx cap open android
