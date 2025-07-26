@@ -1,9 +1,7 @@
-<!-- ![ChallenglyLogo](public/screenshots/challenglyLogo.png) -->
-
-<p align="left">
-  <img src="public/screenshots/challenglyLogo.png" alt="Challengly Logo" width="60">
-  <strong style="font-size: 2em; vertical-align:middle;">Challengly App</strong>
-</p>
+<div align="left" style="display: flex; align-items: center; gap: 12px;">
+  <img src="public/screenshots/challenglyLogo.png" alt="Challengly Logo" width="48">
+  <h1 style="margin: 0; font-size: 1.8em;">Challengly App</h1>
+</div>
 
 ![Vite](https://img.shields.io/badge/Vite-4.0+-blueviolet?logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-18+-61dafb?logo=react&logoColor=black)
