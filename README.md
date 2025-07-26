@@ -1,7 +1,4 @@
-<p align="left">
-  <img src="public/screenshots/challenglyLogo.png" width="32" height="32" alt="Logo"/>
-  &nbsp;&nbsp;<strong>Changelly App</strong>
-</p>
+![Logo](public/screenshots/challenglyLogo.png) (# Changelly App) 
 
 ![Vite](https://img.shields.io/badge/Vite-4.0+-blueviolet?logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-18+-61dafb?logo=react&logoColor=black)
