@@ -1,4 +1,5 @@
-![Logo](public/screenshots/challenglyLogo.png) (# Changelly App) 
+![Logo](public/screenshots/challenglyLogo.png) 
+# Changelly App 
 
 ![Vite](https://img.shields.io/badge/Vite-4.0+-blueviolet?logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-18+-61dafb?logo=react&logoColor=black)
