@@ -1,5 +1,5 @@
 <p align="left">
-  <img src="your-logo-path.png" alt="Logo" width="40" height="40" style="vertical-align: middle;"/>
+  <img src="public/screenshots/challenglyLogo.png" alt="Logo" width="40" height="40" style="vertical-align: middle;"/>
   <span style="font-size: 2rem; font-weight: bold; vertical-align: middle; margin-left: 10px;">Changelly App</span>
 </p>
 
