@@ -11,6 +11,7 @@ import { Dashboard } from "./pages/Dashboard";
 import { Chat } from "./pages/Chat";
 import { Profile } from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import { Motivation } from "./pages/Motivation";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/interests" element={<Interests />} />
+          <Route path="/motivation" element={<Motivation />} />
           <Route path="/difficulty" element={<Difficulty />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/chat" element={<Chat />} />

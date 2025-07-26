@@ -1,73 +1,168 @@
-# Welcome to your Lovable project
+![ChallenglyLogo](public/screenshots/challenglyLogo.png)
 
-## Project info
+# Challengly App
 
-**URL**: https://lovable.dev/projects/43644762-8628-4438-a75c-c57468fe8561
+![Vite](https://img.shields.io/badge/Vite-4.0+-blueviolet?logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-18+-61dafb?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.0+-3178c6?logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.0+-38bdf8?logo=tailwindcss&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn--ui-%F0%9F%92%96-8b5cf6)
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- ✨ **Beautiful, animated onboarding** (interests, motivation, difficulty)
+- 🏆 **Personalized daily challenges** (reveal, progress, celebrations)
+- ⏱️ **Timer/progress tracking** with persistence (across app states)
+- 🎉 **Confetti \& micro-interactions** (for delightful feedback)
+- 💬 **AI-inspired chat assistant** (streaming, quick replies, context-aware)
+- 📈 **Streak \& progress tracking**
+- 📱 **Mobile-first, responsive design**
+- 🖼️ **Shareable challenge cards**
+- 🧠 **Robust edge case handling** (rapid taps, long/empty messages, backgrounding)
 
-**Use Lovable**
+## Screenshots
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/43644762-8628-4438-a75c-c57468fe8561) and start prompting.
+| Onboarding 1                                         | Onboarding 2                                         | Onboarding 3                                         | Onboarding 4                                         |
+| ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
+| ![Onboarding 1](public/screenshots/onboarding-1.png) | ![Onboarding 2](public/screenshots/onboarding-2.png) | ![Onboarding 3](public/screenshots/onboarding-3.png) | ![Onboarding 4](public/screenshots/onboarding-4.png) |
 
-Changes made via Lovable will be committed automatically to this repo.
+| Dashboard                                      | Chat Assistant                       | Profile                                    |
+| ---------------------------------------------- | ------------------------------------ | ------------------------------------------ |
+| ![Dashboard](public/screenshots/dashboard.png) | ![Chat](public/screenshots/chat.png) | ![Profile](public/screenshots/profile.png) |
 
-**Use your preferred IDE**
+## Setup Instructions (Web)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+1. **Clone the repository:**
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. **Install dependencies:**
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```sh
+npm install
+```
+
+3. **Start the development server:**
+
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. **Open the app:**
+   - Visit [http://localhost:5173](http://localhost:5173) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Mobile Instructions (iOS \& Android with Capacitor)
 
-**Use GitHub Codespaces**
+> Prerequisites: Node.js, npm, Xcode (for iOS), Android Studio (for Android), and the latest version of Capacitor
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **(If not already done) Initialize Capacitor configuration:**
 
-## What technologies are used for this project?
+```sh
+npx cap init
+```
 
-This project is built with:
+2. **Build the project:**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```sh
+npm run build
+```
 
-## How can I deploy this project?
+3. **Add iOS and Android platforms:**
+   - iOS:
 
-Simply open [Lovable](https://lovable.dev/projects/43644762-8628-4438-a75c-c57468fe8561) and click on Share -> Publish.
+```sh
+npx cap add ios
+```
 
-## Can I connect a custom domain to my Lovable project?
+    - Android:
 
-Yes, you can!
+```sh
+npx cap add android
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+4. **Open the respective platform's IDE:**
+   - iOS (Xcode):
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```sh
+npx cap open ios
+```
+
+    - Android (Android Studio):
+
+```sh
+npx cap open android
+```
+
+5. **Run \& test on device or emulator:**
+   - Use the IDE (Xcode/Android Studio) to build and run the app on simulator or real device.
+
+> **Note:** If you make UI or logic changes, re-run `npm run build` and sync the build with:
+> `sh > npx cap sync > `
+
+## Test Instructions
+
+- **Unit/Integration tests:** (If test scripts are present)
+
+```sh
+npm test
+```
+
+- **Add tests:** If not present, add with a preferred framework (e.g., Jest, React Testing Library).
+
+## Architecture Overview
+
+```mermaid
+flowchart TD
+    A[App Entry (src/App.tsx)] --> B[Routing (react-router-dom)]
+    B --> C1[Dashboard]
+    B --> C2[Chat]
+    B --> C3[Profile]
+    C1 --> D1[Challenge State & Timer]
+    C1 --> D2[Confetti & Share Card]
+    C2 --> E1[ChatInput]
+    C2 --> E2[MessageBubble]
+    C2 --> E3[QuickReplies]
+    C2 --> E4[Chat State Persistence]
+    C1 --> F1[BottomNavigation]
+    C2 --> F1
+    C3 --> F1
+```
+
+- **Routing:** `react-router-dom`
+- **Pages:** Dashboard, Chat, Profile
+- **Components:** Modular UI (shadcn-ui), custom chat, confetti, share card, etc.
+
+## State Management
+
+- **Local State:** React `useState`, `useEffect`
+- **Persistence:** `localStorage` (for user prefs, progress, chat, timer)
+- **Why:** Fast, robust, and simple for single-user, client-side use; no Redux required.
+
+## Performance Optimizations
+
+- **Timer persistence:** Synced to `localStorage` every second (restores after reload/navigation)
+- **Chat virtualization:** Efficient message rendering, streaming (auto-scroll)
+- **Minimal re-renders:** Targeted state updates
+- **Optimized animations:** GPU-accelerated CSS for confetti, chat, and transitions
+
+## Chat Implementation \& Design
+
+- **Hardcoded AI:** Keyword/context-matched, varied response set (not using external API)
+- **Streaming output:** AI responses typed out
+- **Typing indicator:** Animated dots, realistic delays
+- **Expandable input:** Grows to 5 lines, with character counter/color feedback
+- **Quick replies:** Contextual, conditional display
+- **Persistence:** Chat history per challenge in `localStorage`
+- **Robust edge case handling:** Rapid sends, long/empty messages, repeated triggers, backgrounding
+- **Design inspiration:** Modern chat UIs (ChatGPT, Claude, Cursor)
+
+## Notes
+
+- Built with Vite, React, TypeScript, shadcn-ui, and Tailwind CSS.
+
+Happy Challenging!
+
+<div style="text-align: center">⁂</div>

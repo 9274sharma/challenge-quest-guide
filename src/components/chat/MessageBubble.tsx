@@ -1,10 +1,11 @@
-import { Bot, User } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { Bot, User } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 export interface Message {
   id: string;
   content: string;
-  sender: 'user' | 'ai';
+  sender: "user" | "ai";
   timestamp: Date;
   typing?: boolean;
 }
@@ -14,7 +15,13 @@ interface MessageBubbleProps {
 }
 
 export const MessageBubble = ({ message }: MessageBubbleProps) => {
-  const isUser = message.sender === 'user';
+  const isUser = message.sender === "user";
+  const [expanded, setExpanded] = useState(false);
+  const isLong = !isUser && message.content.length > 400;
+  const displayContent =
+    isLong && !expanded
+      ? message.content.slice(0, 400) + "..."
+      : message.content;
 
   if (message.typing) {
     return (
@@ -34,17 +41,19 @@ export const MessageBubble = ({ message }: MessageBubbleProps) => {
   }
 
   return (
-    <div className={cn(
-      "flex items-start space-x-3 animate-fade-in-up",
-      isUser && "flex-row-reverse space-x-reverse"
-    )}>
+    <div
+      className={cn(
+        "flex items-start space-x-3 animate-fade-in-up",
+        isUser && "flex-row-reverse space-x-reverse"
+      )}
+    >
       {/* Avatar */}
-      <div className={cn(
-        "w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0",
-        isUser 
-          ? "bg-secondary" 
-          : "bg-primary"
-      )}>
+      <div
+        className={cn(
+          "w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0",
+          isUser ? "bg-secondary" : "bg-primary"
+        )}
+      >
         {isUser ? (
           <User className="w-4 h-4 text-secondary-foreground" />
         ) : (
@@ -53,28 +62,42 @@ export const MessageBubble = ({ message }: MessageBubbleProps) => {
       </div>
 
       {/* Message Bubble */}
-      <div className={cn(
-        "rounded-2xl px-4 py-3 max-w-[80%] break-words",
-        isUser 
-          ? "bg-primary text-primary-foreground rounded-tr-md" 
-          : "bg-card border border-border rounded-tl-md"
-      )}>
-        <p className={cn(
-          "text-sm leading-relaxed",
-          isUser ? "text-primary-foreground" : "text-foreground"
-        )}>
-          {message.content}
+      <div
+        className={cn(
+          "rounded-2xl px-4 py-3 max-w-[80%] break-words",
+          isUser
+            ? "bg-primary text-primary-foreground rounded-tr-md"
+            : "bg-card border border-border rounded-tl-md"
+        )}
+      >
+        <p
+          className={cn(
+            "text-sm leading-relaxed",
+            isUser ? "text-primary-foreground" : "text-foreground"
+          )}
+        >
+          {displayContent}
+          {isLong && !expanded && (
+            <button
+              className="ml-2 text-xs underline text-primary hover:text-primary-dark"
+              onClick={() => setExpanded(true)}
+            >
+              Show more
+            </button>
+          )}
         </p>
-        
+
         {/* Timestamp */}
-        <div className={cn(
-          "text-xs mt-1 opacity-70",
-          isUser ? "text-primary-foreground" : "text-foreground-muted"
-        )}>
-          {message.timestamp.toLocaleTimeString('en-US', { 
-            hour: 'numeric', 
-            minute: '2-digit',
-            hour12: true 
+        <div
+          className={cn(
+            "text-xs mt-1 opacity-70",
+            isUser ? "text-primary-foreground" : "text-foreground-muted"
+          )}
+        >
+          {message.timestamp.toLocaleTimeString("en-US", {
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true,
           })}
         </div>
       </div>

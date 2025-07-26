@@ -11,7 +11,7 @@
     --background-secondary: 240 10% 98%;
     --surface: 0 0% 100%;
     --surface-elevated: 240 10% 99%;
-    
+
     /* Text Colors */
     --foreground: 240 10% 9%;
     --foreground-secondary: 240 6% 40%;
@@ -22,13 +22,13 @@
     --primary-foreground: 0 0% 100%;
     --primary-light: 217 91% 70%;
     --primary-dark: 217 91% 50%;
-    
+
     /* Interactive Elements */
     --secondary: 240 5% 96%;
     --secondary-foreground: 240 6% 10%;
     --accent: 217 91% 95%;
     --accent-foreground: 217 91% 30%;
-    
+
     /* Status Colors */
     --success: 142 76% 36%;
     --success-foreground: 0 0% 100%;
@@ -44,7 +44,7 @@
     --popover-foreground: 240 10% 9%;
     --muted: 240 5% 96%;
     --muted-foreground: 240 4% 46%;
-    
+
     /* Borders & Inputs */
     --border: 240 6% 90%;
     --border-input: 240 6% 85%;
@@ -55,19 +55,34 @@
     --radius: 12px;
     --radius-lg: 16px;
     --radius-xl: 20px;
-    
+
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
-    --gradient-success: linear-gradient(135deg, hsl(var(--success)) 0%, hsl(142 76% 46%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(var(--card)) 0%, hsl(var(--surface-elevated)) 100%);
-    
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(var(--primary)) 0%,
+      hsl(var(--primary-light)) 100%
+    );
+    --gradient-success: linear-gradient(
+      135deg,
+      hsl(var(--success)) 0%,
+      hsl(142 76% 46%) 100%
+    );
+    --gradient-card: linear-gradient(
+      180deg,
+      hsl(var(--card)) 0%,
+      hsl(var(--surface-elevated)) 100%
+    );
+
     /* Mobile-specific spacing */
     --mobile-padding: 20px;
     --mobile-margin: 16px;
@@ -95,7 +110,7 @@
     --background-secondary: 240 10% 6%;
     --surface: 240 10% 7%;
     --surface-elevated: 240 10% 9%;
-    
+
     --foreground: 0 0% 98%;
     --foreground-secondary: 240 5% 64%;
     --foreground-muted: 240 5% 45%;
@@ -104,12 +119,12 @@
     --primary-foreground: 240 10% 4%;
     --primary-light: 217 91% 75%;
     --primary-dark: 217 91% 55%;
-    
+
     --secondary: 240 4% 16%;
     --secondary-foreground: 0 0% 98%;
     --accent: 217 91% 15%;
     --accent-foreground: 217 91% 80%;
-    
+
     --success: 142 76% 46%;
     --success-foreground: 240 10% 4%;
     --warning: 38 92% 60%;
@@ -123,12 +138,12 @@
     --popover-foreground: 0 0% 98%;
     --muted: 240 4% 16%;
     --muted-foreground: 240 5% 64%;
-    
+
     --border: 240 4% 16%;
     --border-input: 240 4% 20%;
     --input: 240 4% 16%;
     --ring: 217 91% 65%;
-    
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -158,23 +173,23 @@
   .mobile-container {
     @apply w-full max-w-sm mx-auto px-6 py-4;
   }
-  
+
   .mobile-card {
     @apply bg-card rounded-xl shadow-lg border border-border/50 p-6;
   }
-  
+
   /* Mobile-optimized buttons */
   .mobile-button {
     @apply min-h-[48px] text-base font-medium rounded-xl transition-all duration-200;
   }
-  
+
   /* Chat-specific mobile styles */
   .chat-input {
     @apply resize-none rounded-xl border-border-input bg-input text-foreground placeholder:text-foreground-muted;
     min-height: 44px;
     max-height: 120px;
   }
-  
+
   /* Mobile-optimized touch targets */
   .touch-target {
     @apply min-w-[44px] min-h-[44px];
@@ -186,30 +201,43 @@
   .slide-up {
     animation: slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .slide-down {
     animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .fade-in-up {
     animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .bounce-in {
     animation: bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  
+
   .pulse-glow {
     animation: pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
-  
+
   /* Typing indicator animation */
   .typing-dots {
     animation: typingDots 1.4s infinite ease-in-out;
   }
-  
-  .typing-dots:nth-child(1) { animation-delay: -0.32s; }
-  .typing-dots:nth-child(2) { animation-delay: -0.16s; }
+
+  .typing-dots:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+  .typing-dots:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+}
+
+@layer utilities {
+  .pt-safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+  .pb-safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }
 
 @keyframes slideUp {
@@ -263,7 +291,8 @@
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 0 0 hsl(var(--primary) / 0.4);
   }
   50% {
@@ -272,7 +301,9 @@
 }
 
 @keyframes typingDots {
-  0%, 60%, 100% {
+  0%,
+  60%,
+  100% {
     transform: translateY(0);
     opacity: 0.4;
   }
@@ -280,4 +311,51 @@
     transform: translateY(-8px);
     opacity: 1;
   }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-6px);
+  }
+  40% {
+    transform: translateX(6px);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.animate-shake {
+  animation: shake 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }

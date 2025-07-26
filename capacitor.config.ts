@@ -1,21 +1,14 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import type { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
-  appId: 'app.lovable.4364476286284438a75cc57468fe8561',
-  appName: 'challenge-quest-guide',
-  webDir: 'dist',
+  appId: "com.yash9274sharma.challengequest",
+  appName: "Challengly",
+  webDir: "dist",
   server: {
-    url: 'https://43644762-8628-4438-a75c-c57468fe8561.lovableproject.com?forceHideBadge=true',
-    cleartext: true
+    url: "http://localhost:8080/",
+    // url: "http://192.168.1.12:8080/",
+    cleartext: true,
   },
-  plugins: {
-    SplashScreen: {
-      launchShowDuration: 1000,
-      launchAutoHide: true,
-      showSpinner: false,
-      backgroundColor: '#3B82F6'
-    }
-  }
 };
 
 export default config;
