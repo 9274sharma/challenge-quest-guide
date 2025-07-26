@@ -22,9 +22,13 @@
 
 ## Screenshots
 
-| Onboarding 1                                         | Onboarding 2                                         | Onboarding 3                                         | Onboarding 4                                         |
-| ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
-| ![Onboarding 1](public/screenshots/onboarding-1.png) | ![Onboarding 2](public/screenshots/onboarding-2.png) | ![Onboarding 3](public/screenshots/onboarding-3.png) | ![Onboarding 4](public/screenshots/onboarding-4.png) |
+<!-- | Onboarding 1 | Onboarding 2                                            | Onboarding 3                                            | Onboarding 4                                        |
+| ------------ | ------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------- |
+| <img src/>   | ![Onboarding 2](public/screenshots/onBoarding2.png.png) | ![Onboarding 3](public/screenshots/onBoarding3.png.png) | ![Onboarding 4](public/screenshots/onBoarding4.png) | -->
+
+| Onboarding 1                                                                   | Onboarding 2                                                                   | Onboarding 3                                                                   | Onboarding 4                                                                   |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| <img src="public/screenshots/onBoarding1.png" alt="Onboarding 1" width="200"/> | <img src="public/screenshots/onBoarding2.png" alt="Onboarding 2" width="200"/> | <img src="public/screenshots/onBoarding3.png" alt="Onboarding 3" width="200"/> | <img src="public/screenshots/onBoarding4.png" alt="Onboarding 4" width="200"/> |
 
 | Dashboard                                      | Chat Assistant                       | Profile                                    |
 | ---------------------------------------------- | ------------------------------------ | ------------------------------------------ |
