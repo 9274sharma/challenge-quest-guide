@@ -47,7 +47,7 @@ export const Welcome = () => {
           <h1 className="text-3xl font-bold text-foreground leading-tight">
             Welcome to
             <br />
-            <span className="text-primary">Challengly</span>
+            <span className="text-primary">Challengely</span>
           </h1>
           <p className="text-foreground-secondary text-lg leading-relaxed max-w-sm mx-auto">
             Your daily dose of personalized challenges to help you grow and
