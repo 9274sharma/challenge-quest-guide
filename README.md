@@ -1,6 +1,6 @@
 <img src="public/screenshots/challenglyLogo.png" width="60" height="60" alt="Logo"/>
 
-# Changelly App 
+# Challengely App 
 
 ![Vite](https://img.shields.io/badge/Vite-4.0+-blueviolet?logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-18+-61dafb?logo=react&logoColor=black)
