@@ -313,7 +313,7 @@ export const Chat = () => {
         <ChatInput
           onSendMessage={handleSendMessage}
           disabled={isTyping}
-          placeholder="Ask me anything about your challenge..."
+          placeholder="Ask me anything ..."
         />
       </div>
 

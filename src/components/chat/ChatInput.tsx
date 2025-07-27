@@ -16,7 +16,7 @@ export const ChatInput = ({
   const [message, setMessage] = useState("");
   const [isExpanded, setIsExpanded] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
-  const maxLength = 500;
+  const maxLength = 100;
   const [lastSent, setLastSent] = useState<number>(0);
   const [shake, setShake] = useState(false);
   const debounceMs = 600;
@@ -77,7 +77,7 @@ export const ChatInput = ({
     >
       <div className="w-full max-w-sm mx-auto">
         {/* Character Counter */}
-        {message.length > maxLength * 0.8 && (
+        {/* {
           <div
             className={cn(
               "text-xs text-right mb-2 transition-colors",
@@ -86,7 +86,7 @@ export const ChatInput = ({
           >
             {message.length}/{maxLength}
           </div>
-        )}
+        } */}
 
         {/* Input Container */}
         <div className="flex items-center space-x-2">
@@ -121,7 +121,7 @@ export const ChatInput = ({
               rows={1}
               style={{
                 // minHeight: 36,
-                maxHeight: 120,
+                maxHeight: 50,
                 padding: 0,
                 margin: 0,
                 boxShadow: "none",
@@ -140,6 +140,14 @@ export const ChatInput = ({
                 <Mic className="w-5 h-5" />
               </button>
             )}
+          </div>
+          <div
+            className={cn(
+              "text-xs text-right mb-2 transition-colors",
+              getCharacterColor()
+            )}
+          >
+            {message.length}/{maxLength}
           </div>
 
           {/* Send Button */}
